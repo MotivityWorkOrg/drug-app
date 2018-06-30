@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeng/resources/themes/darkness/theme.css";
+
+body {
+    background-color: #cccccc !important;
+    margin: 0 24px;
+}
+
+.header-main {
+    padding: 10px 0;
+}
+
+.navbar-nav li {
+    padding: 0 20px;
+}
+
+.navbar-nav li:hover {
+    padding: 0 20px;
+    background: #f0902c;
+}
+
+.navbar-nav li:active {
+    padding: 0 20px;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.nav-left {
+    background: #f06a5b;
+}
+
+.nav-right {
+    background: #e36f22;
+}
+
+.navbar {
+    padding: 0.5rem 0;
+}
+
+.navbar .nav-link {
+    color: #000 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.color-orange {
+    background: #f06a5b;
+    border-radius: 10px;
+}
+
+.margin-padding-0 {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}

@@ -3,15 +3,13 @@ import {CommonModule} from '@angular/common';
 import {DrugComponent} from './drug.component';
 import {DRUG_ROUTES} from './drug.route';
 
-@NgModule({
-    declarations: [
-        DrugComponent
-    ],
+@NgModule(
+  {
     imports: [
-        CommonModule,
-        DRUG_ROUTES
+      CommonModule,
+      DRUG_ROUTES
     ],
     declarations: [DrugComponent]
-})
+  })
 export class DrugModule {
 }

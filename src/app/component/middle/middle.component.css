@@ -1,0 +1,9 @@
+.middle-card {
+    height: 97%;
+    text-align: center;
+}
+
+.middle-card span {
+    position: absolute;
+    margin: 45% 35%;
+}
