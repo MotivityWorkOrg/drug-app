@@ -1,0 +1,5 @@
+<div class="card mb-4 box-shadow" *ngFor="let dataInfo of graphData let i = index" [attr.data-index]="i">
+    <div class="card-body">
+        <p-chart type="line" [data]="dataInfo" width="20vw" height="20vh"></p-chart>
+    </div>
+</div>

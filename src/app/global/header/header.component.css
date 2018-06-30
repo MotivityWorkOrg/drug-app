@@ -1,0 +1,14 @@
+.align-fa-icon {
+    position: absolute;
+    right: 25px;
+}
+
+.align-fa-drug {
+    position: relative;
+    right: 25px;
+}
+
+
+.ui-autocomplete .ui-autocomplete-input {
+    padding-right: 1.8em !important;
+}

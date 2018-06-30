@@ -1,0 +1,51 @@
+<div class="header-main">
+    <div class="row">
+        <div class="col-4">
+            <form class="form-inline my-2 my-lg-0">
+                <p-autoComplete [(ngModel)]="drugSearch" name="DrugInfo" [suggestions]="results"
+                                placeholder="Drug Search"
+                                (completeMethod)="search($event)"></p-autoComplete>
+                <span class="fa fa-search align-fa-drug"></span>
+            </form>
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-danger">PharamBizz</button>
+            <button type="button" class="btn btn-success">Pro Trader Log In</button>
+        </div>
+        <div class="col-4">
+            <form class="form-inline my-2 my-lg-0" style="float: right">
+                <p-autoComplete [(ngModel)]="inputSearch" name="something" [suggestions]="results"
+                                placeholder="Drug Search"
+                                (completeMethod)="search($event)"></p-autoComplete>
+                <span class="fa fa-search align-fa-icon"></span>
+            </form>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav nav-left col-6">
+            <li>
+                <a class="nav-link" [routerLink]="['/drugs']" routerLinkActive="active"
+                   [routerLinkActiveOptions]="{ exact: true }">Drugs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Stocks</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Calender Pharama</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-auto nav-right col-6">
+            <li class="nav-item">
+                <a class="nav-link" href="#">FDA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+            </li>
+        </ul>
+    </div>
+</nav>

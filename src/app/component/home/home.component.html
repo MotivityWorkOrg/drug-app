@@ -1,0 +1,25 @@
+<div class="container margin-padding-0">
+    <div class="row">
+        <div class="col-3">
+            <app-left-nav [graphData]="rightGraphData"></app-left-nav>
+        </div>
+        <div class="col-9">
+            <!-- Second rows left column  start here-->
+            <div class="row">
+                <div class="col-8">Daily updates come here</div>
+                <div class="col-4">
+                    <app-right-nav [barChart]="barChartData"  [pieChart]="pieChartData" [doughnutChart]="doughnutChartData"></app-right-nav>
+                </div>
+            </div>
+            <!-- Second rows Right column start here -->
+            <div class="row">
+                <div class="col-7">Note</div>
+                <div class="col-5">
+                    <div class="card mb-4 box-shadow color-orange">
+                        <div class="card-body"><p>PharamBizz</p>TV</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
