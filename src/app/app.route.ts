@@ -17,6 +17,11 @@ const ROUTES: Routes = [
         path: 'drugs',
         loadChildren: './component/drug/drug.module#DrugModule',
         pathMatch: 'full'
+    },
+    {
+        path: 'stocks',
+        loadChildren: './component/stock/stock.module#StockModule',
+        pathMatch: 'full'
     }];
 
 export const APP_ROUTES: ModuleWithProviders = RouterModule.forRoot(ROUTES);
