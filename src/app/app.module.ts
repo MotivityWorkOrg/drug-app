@@ -10,26 +10,28 @@ import {RightNavComponent} from './component/right-nav/right-nav.component';
 import {ChartModule} from 'primeng/chart';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import {FormsModule} from '@angular/forms';
-import { MiddleComponent } from './component/middle/middle.component';
+import {MiddleComponent} from './component/middle/middle.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    HomeComponent,
-    LeftNavComponent,
-    RightNavComponent,
-    MiddleComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    APP_ROUTES,
-    ChartModule,
-    AutoCompleteModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        HomeComponent,
+        LeftNavComponent,
+        RightNavComponent,
+        MiddleComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        APP_ROUTES,
+        ChartModule,
+        AutoCompleteModule,
+        FlexLayoutModule.withConfig({useColumnBasisZero: false})
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }
